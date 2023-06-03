@@ -1,0 +1,46 @@
+.planetas:hover{
+    height: 30px;
+    width: 30px;
+}
+
+#mercurio:hover{
+    animation-play-state: paused;
+}
+
+#venus:hover{
+    animation-play-state: paused;
+}
+
+#terra:hover{
+    animation-play-state: paused;
+}
+
+#marte:hover{
+    animation-play-state: paused;
+}
+
+#jupiter:hover{
+    animation-play-state: paused;
+}
+
+#saturno:hover{
+    animation-play-state: paused;
+}
+
+
+#uranus:hover{
+    animation-play-state: paused;
+}
+
+#netuno:hover{
+    animation-play-state: paused;
+}
+#lua:hover{
+    animation-play-state: paused;
+    height: 20px;
+    width: 20px;
+}
+
+#anel:hover{
+    animation-play-state: paused;
+}

@@ -1,0 +1,668 @@
+* {
+    background-color: #12002C;
+}
+
+/* funcões gerais */
+.planetas {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    transition: transform 5s;
+}
+
+
+.texto{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: "Century Gothic";
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.orbita {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: #12002C;
+    border-radius: 50%;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: white;
+    animation: roda 4s linear infinite;
+    z-index: -1;
+}
+
+@keyframes roda {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+#sistema{
+    text-decoration: none;
+    position: absolute;
+    top: 20%;
+    right:0;
+    bottom: 0;
+    left: 100;
+    width: 200px;
+    height:100px;
+    transition: transform 0.5s;
+}
+
+.texto2:hover{
+    transform:translateX(-10px);
+    color: #FF9070;
+  }
+
+
+  .informacao{
+    position: fixed;
+    color:white;
+    text-align: center;
+    width:10%;
+    height: 28%;
+    top:40%;
+    right:0;
+    left:10%;
+    bottom:0;
+    font-size: 100%;
+    font-family: "Century Gothic";
+    border-style: solid;
+    border-radius:15px;
+    border-width: 4px;
+    transition: transform 0.5s;
+    overflow: hidden; 
+  }
+
+  @media (max-width: 2400px) {
+    .informacao{
+      font-size: 80%;
+    }
+  }
+  @media (max-width: 1800px) {
+    .informacao{
+      display: none;
+    }
+  }
+
+  @media (min-width: 3300px) {
+    .informacao{
+      display: none;
+    }
+  }
+  
+  
+
+  .informacao:hover{
+    transform:translate(10px) translateY(-10px);
+    color: #FF9070;
+  }
+
+  .quadrado{
+    position: absolute;
+    background-color:rgb(255, 255, 255);
+    width:10%;
+    height: 28%;
+    top:40%;
+    right:0;
+    left:10%;
+    bottom:0;
+    border-style: solid;
+    border-radius:15px;
+    z-index: -1;
+  }
+
+  @media (max-width: 1800px) {
+    .quadrado{
+      display: none;
+    }
+  }
+
+  @media (min-width: 3300px) {
+    .quadrado{
+      display: none;
+    }
+  }
+
+  .linha{
+    position: absolute;
+    background-color:rgb(255, 255, 255);
+    width:4%;
+    height: 0.1%;
+    top:0;
+    right:0;
+    left:5%;
+    bottom:0;
+    margin: auto;
+  }
+
+  .dados{
+    position: absolute;
+    color:rgb(255, 255, 255);
+    width:100px;
+    height: 1%;
+    top:0;
+    right:0;
+    left:6%;
+    bottom:5%;
+    margin: auto;
+    padding: auto;
+  }
+
+@media (max-width: 1800px) {
+    .dados{
+        width:3%;
+        height: 1%;
+        bottom:15%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .dados{
+        bottom:30%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .dados{
+        bottom:40%;
+    }
+  }
+
+
+  @media (max-width: 1800px) {
+    .texto{
+      display: none;
+    }
+  }
+
+  @media (min-width: 3300px) {
+    .texto{
+      display: none;
+    }
+  }
+
+
+  #bloco_texto{
+    padding: 10%;
+    padding-top: 15%;
+  }
+
+
+/* funcões sul */
+
+#sun{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #FFA600;
+}
+
+#solt{
+    text-decoration: none;
+    position: absolute;
+    top: 26.7%;
+    right:0;
+    bottom: 0;
+    left: 100;
+    width: 200px;
+    height:100px;
+    transition: transform 0.5s;
+}
+
+
+/* funcões mercurio */
+
+#mercurio {
+    animation: rotação1 3s linear infinite;
+    background-color: #B9B9B9;
+}
+
+@keyframes rotação1 {
+    0% {
+        transform: rotate(0deg) translate(-26px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-26px) rotate(-360deg);
+    }
+}
+
+#mercuriot{
+    text-decoration: none;
+    position: absolute;
+    top: 33.4%;
+    right:0;
+    bottom: 0;
+    left: 100;
+    width: 200px;
+    height:100px;
+    transition: transform 0.5s;
+}
+
+#linham{
+    animation: rotação1 3s linear infinite;
+}
+
+#dadosm{
+    animation: rotação1 3s linear infinite;
+}
+
+#distanciam {
+    animation: rotação1 3s linear infinite;
+    bottom:-1%;
+
+}
+
+
+/* funcões venus */
+
+#venus {
+    background-color: #BB6900;
+    animation: rotação2 6s linear infinite;
+}
+
+#o1 {
+    width: 100px;
+    height: 100px;
+    z-index: -2;
+    animation: roda 8s linear infinite;
+}
+
+
+@keyframes rotação2 {
+    0% {
+        transform: rotate(0deg) translate(-52px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-52px) rotate(-360deg);
+    }
+}
+
+#venust{
+    text-decoration: none;
+    position: absolute;
+    top: 40.2%;
+    right:0;
+    bottom: 0;
+    left: 100;
+    width: 200px;
+    height:100px;
+    transition: transform 0.5s;
+}
+
+#linhav{
+    animation: rotação2 6s linear infinite;
+}
+
+#dadosv{
+    animation: rotação2 6s linear infinite;
+}
+
+#distanciav {
+    animation: rotação2 6s linear infinite;
+    bottom:-1%;
+
+}
+
+
+/* funcões terra e lua  */
+
+#lua{
+    height: 8px;
+    width:8px;
+    background-color:#C3C3C3;
+    animation: rotaçãolua 9s linear infinite;
+}
+
+#terra {
+    animation: rotação3 9s linear infinite;
+    background-color: #00C8F0;
+}
+
+#o2 {
+    width: 150px;
+    height: 150px;
+    z-index: -3;
+    animation: roda 11s linear infinite;
+}
+
+@keyframes rotação3 {
+    0% {
+        transform: rotate(0deg) translate(-77px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-77px) rotate(-360deg);
+    }
+}
+
+@keyframes rotaçãolua {
+    0% {
+        transform: rotate(0deg) translate(-90px) rotate(0deg);
+        z-index:1;
+    }
+
+    50%{
+        transform: rotate(180deg) translate(-60px) rotate(180deg);
+        z-index:-1;
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-90px) rotate(360deg);
+        z-index:-1;
+    }
+}
+
+#terrat{
+    text-decoration: none;
+    position: absolute;
+    top: 46.9%;
+    right:0;
+    bottom: 0;
+    left: 100;
+    width: 200px;
+    height:100px;
+    transition: transform 0.5s;
+}
+
+#linhat{
+    animation: rotação3 9s linear infinite;
+}
+
+#dadost{
+    animation: rotação3 9s linear infinite;
+}
+
+#distanciat {
+    animation: rotação3 9s linear infinite;
+    bottom:-1%;
+
+}
+
+/* funcões marte */
+
+#marte {
+    animation: rotação4 12s linear infinite;
+    background-color: #FF4900;
+}
+
+#o3 {
+    width: 200px;
+    height: 200px;
+    z-index: -4;
+    animation: roda 13s linear infinite;
+}
+
+@keyframes rotação4 {
+    0% {
+        transform: rotate(0deg) translate(-102px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-102px) rotate(-360deg);
+    }
+}
+
+
+#martet{
+    text-decoration: none;
+    position: absolute;
+    top: 53.6%;
+    right:0;
+    bottom: 0;
+    left: 100;
+    width: 200px;
+    height:100px;
+    transition: transform 0.5s;
+}
+
+#linhama{
+    animation: rotação4 12s linear infinite;
+}
+
+#dadosma{
+    animation: rotação4 12s linear infinite;
+}
+
+#distanciama {
+    animation: rotação4 12s linear infinite;
+    bottom:-1%;
+
+}
+
+/* funcões jupiter */
+
+#jupiter {
+    animation: rotação5 15s linear infinite;
+    background-color: #BDA676;
+}
+
+#o4 {
+    width: 250px;
+    height: 250px;
+    z-index: -5;
+    animation: roda 15s linear infinite;
+}
+
+@keyframes rotação5 {
+    0% {
+        transform: rotate(0deg) translate(-127px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-127px) rotate(-360deg);
+    }
+}
+
+#jupitert{
+    text-decoration: none;
+    position: absolute;
+    top: 60.3%;
+    right:0;
+    bottom: 0;
+    left: 100;
+    width: 200px;
+    height:100px;
+    transition: transform 0.5s;
+}
+
+#linhaj{
+    animation: rotação5 15s linear infinite;
+}
+
+#dadosj{
+    animation: rotação5 15s linear infinite;
+}
+
+#distanciaj {
+    animation: rotação5 15s linear infinite;
+    bottom:-1%;
+
+}
+
+/* funcões saturno e anel */
+#saturno {
+    animation: rotação6 18s linear infinite;
+    background-color: #EAD2A1;
+}
+
+#anel{
+    width: 30px;
+    height: 6px;
+    z-index: -1;
+    border-style: solid;
+    border-color: #F5EA7E;
+    animation: rotação6  18s linear infinite;
+}
+
+
+#o5 {
+    width: 300px;
+    height: 300px;
+    z-index: -6;
+    animation: roda 17s linear infinite;
+}
+
+@keyframes rotação6 {
+    0% {
+        transform: rotate(0deg) translate(-152px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-152px) rotate(-360deg);
+    }
+}
+
+#saturnot{
+    text-decoration: none;
+    position: absolute;
+    top: 67%;
+    right:0;
+    bottom: 0;
+    left: 100;
+    width: 200px;
+    height:100px;
+    transition: transform 0.5s;
+}
+
+#linhas{
+    animation: rotação6 18s linear infinite;
+}
+
+#dadoss{
+    animation: rotação6 18s linear infinite;
+}
+
+#distancias {
+    animation: rotação6 18s linear infinite;
+    bottom:-1%;
+
+}
+
+/* funcões urano */
+#uranus {
+    animation: rotação7 21s linear infinite;
+    background-color: #261DE6;
+}
+
+#o6 {
+    width: 350px;
+    height: 350px;
+    z-index: -7;
+    animation: roda 19s linear infinite;
+}
+
+@keyframes rotação7 {
+    0% {
+        transform: rotate(0deg) translate(-177px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-177px) rotate(-360deg);
+    }
+}
+
+#uranot{
+    text-decoration: none;
+    position: absolute;
+    top: 73.7%;
+    right:0;
+    bottom: 0;
+    left: 100;
+    width: 200px;
+    height:100px;
+    transition: transform 0.5s;
+}
+
+#linhau{
+    animation: rotação7 21s linear infinite;
+}
+
+#dadosu{
+    animation: rotação7 21s linear infinite;
+}
+
+#distanciau {
+    animation: rotação7 21s linear infinite;
+    bottom:-1%;
+
+}
+
+/*funcões netuno */
+
+#netuno {
+    animation: rotação8 24s linear infinite;
+    background-color: #938EFF;
+}
+
+
+#o7 {
+    width: 400px;
+    height: 400px;
+    z-index: -8;
+    animation: roda 21s linear infinite;
+}
+
+
+@keyframes rotação8 {
+    0% {
+        transform: rotate(0deg) translate(-202px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-202px) rotate(-360deg);
+    }
+}
+
+#netunot{
+    text-decoration: none;
+    position: absolute;
+    top: 80%;
+    right:0;
+    bottom: 0;
+    left: 100;
+    width: 200px;
+    height:100px;
+    transition: transform 0.5s;
+}
+
+
+#linhan{
+    animation: rotação8 24s linear infinite;
+}
+
+#dadosn{
+    animation: rotação8 24s linear infinite;
+}
+
+#distancian {
+    animation: rotação8 24s linear infinite;
+    bottom:-1%;
+
+}
